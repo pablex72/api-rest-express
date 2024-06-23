@@ -3,8 +3,10 @@ const routerApi = require("./routes");
 const app = express();
 const port = 3001;
 
-const { faker } = require("@faker-js/faker");
+// const { faker } = require("@faker-js/faker");
 // const randomName = faker.name.findName();
+
+app.use(express.json())
 
 app.get("/", (req, res) => {
   res.send("hola mi serverrrr expressssssssss");
